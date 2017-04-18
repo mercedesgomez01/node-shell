@@ -1,5 +1,6 @@
 module.exports = {
+
     pwd: function(){
-        return 'nothing today'
+        return 'nothing today';
     }
-}
+};

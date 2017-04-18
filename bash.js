@@ -1,3 +1,6 @@
+var commands = require('./commands');
+var userCommand = 'pwd';
+commands[userCommand]();
 //INSPECT PROCESS THE GLOBAL VARIABLE
 //console.log(process, Object.keys(process))
 
@@ -13,8 +16,3 @@ process.stdin.on('data', function (data) {
   process.stdout.write('\nprompt > ');
 
 });
-
-//PWD
-function pwd (stdin, args, done) {
-  done(process.cwd());
-}
